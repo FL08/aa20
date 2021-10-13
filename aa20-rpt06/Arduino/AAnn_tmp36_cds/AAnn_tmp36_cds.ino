@@ -2,10 +2,10 @@
  온도, 빛 입력 LCD 모니터링 및 제어
 */
  // LCD 라리브러리 설정
-#include <LiquidCrystal_I2C.h>
-#include<Wire.h>
+//#include <LiquidCrystal_I2C.h>
+//#include<Wire.h>
 // LCD 설정
-LiquidCrystal_I2C lcd(0x27,16,2); // 0x3F
+//LiquidCrystal_I2C lcd(0x27,16,2); // 0x3F
 // 0번 아날로그핀을 TMP36 온도 입력으로 설정한다.
 // 1번 아날로그핀을 CdS 조도 입력으로 설정한다.
 #define TMP36_INPUT 0  // A0
@@ -14,8 +14,8 @@ LiquidCrystal_I2C lcd(0x27,16,2); // 0x3F
 void setup() { 
   Serial.begin(9600);
 // 16X2 LCD 모듈 설정하고 백라이트를 켠다.
-  lcd.init();
-  lcd.backlight();
+//  lcd.init();
+//  lcd.backlight();
 // 모든 메세지를 삭제한 뒤
 // 숫자를 제외한 부분들을 미리 출력시킨다.
 //  lcd.clear();
